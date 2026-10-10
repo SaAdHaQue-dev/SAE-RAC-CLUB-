@@ -165,8 +165,8 @@
         /* --- Header & Live Steering Wheel Shift Lights --- */
         header {
             background: rgba(6, 6, 8, 0.88);
-            backdrop-filter: blur(18px);
             -webkit-backdrop-filter: blur(18px);
+            backdrop-filter: blur(18px);
             padding: 16px 0;
             position: sticky;
             top: 0;
@@ -565,6 +565,7 @@
             padding: 12px 18px;
             border-left: 3px solid var(--f1-red);
             border-radius: 0 4px 4px 0;
+            -webkit-backdrop-filter: blur(8px);
             backdrop-filter: blur(8px);
         }
 
@@ -584,6 +585,7 @@
             align-items: center;
             gap: 20px;
             pointer-events: auto;
+            -webkit-backdrop-filter: blur(14px);
             backdrop-filter: blur(14px);
             box-shadow: 0 15px 40px rgba(0,0,0,0.8);
         }
@@ -832,6 +834,7 @@
             border-top: 3px solid var(--f1-red);
             border-radius: 6px;
             padding: 24px;
+            -webkit-backdrop-filter: blur(16px);
             backdrop-filter: blur(16px);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), inset 0 0 20px rgba(255, 0, 60, 0.05);
         }
@@ -1018,6 +1021,7 @@
             padding: 26px;
             border-radius: 4px;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+            -webkit-backdrop-filter: blur(12px);
             backdrop-filter: blur(12px);
             transition: all 0.35s ease;
         }
@@ -1971,6 +1975,7 @@
             border-left: 3px solid var(--cyan-telemetry);
             padding: 8px 12px;
             border-radius: 3px;
+            -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
         }
 
@@ -2042,6 +2047,7 @@
             padding: 8px 14px;
             border-radius: 4px;
             white-space: nowrap;
+            -webkit-backdrop-filter: blur(12px);
             backdrop-filter: blur(12px);
             box-shadow: 0 12px 30px rgba(0,0,0,0.95), 0 0 15px var(--cyan-glow);
             opacity: 0;
@@ -2169,6 +2175,7 @@
             padding: 7px 18px;
             border-radius: 3px;
             box-shadow: 0 0 20px var(--cyan-glow);
+            -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
         }
 
@@ -2180,6 +2187,7 @@
             font-family: 'Orbitron', monospace;
             font-size: 0.85rem;
             color: #fff;
+            -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
             box-shadow: 0 0 20px rgba(0,0,0,0.8);
         }
@@ -2205,6 +2213,7 @@
             border-left: 4px solid var(--f1-red);
             border-radius: 4px;
             padding: 20px 24px;
+            -webkit-backdrop-filter: blur(14px);
             backdrop-filter: blur(14px);
             box-shadow: 0 15px 35px rgba(0,0,0,0.7), 0 0 20px rgba(255, 0, 60, 0.15);
         }
@@ -2264,6 +2273,7 @@
             border: 1px solid var(--cyan-telemetry);
             border-radius: 4px;
             padding: 20px;
+            -webkit-backdrop-filter: blur(14px);
             backdrop-filter: blur(14px);
             box-shadow: 0 15px 40px rgba(0,0,0,0.8), 0 0 25px var(--cyan-glow);
             pointer-events: auto;
@@ -2346,6 +2356,7 @@
             flex-direction: column;
             gap: 12px;
             pointer-events: auto;
+            -webkit-backdrop-filter: blur(16px);
             backdrop-filter: blur(16px);
             box-shadow: 0 20px 50px rgba(0,0,0,0.9), 0 0 30px rgba(0, 240, 255, 0.15);
         }
@@ -2533,6 +2544,7 @@
             border: 1px solid var(--cyan-telemetry);
             padding: 4px 10px;
             border-radius: 3px;
+            -webkit-backdrop-filter: blur(8px);
             backdrop-filter: blur(8px);
             white-space: nowrap;
             box-shadow: 0 0 15px rgba(0,0,0,0.8);
@@ -2579,6 +2591,41 @@
             .deck-top-row { gap: 8px; }
             .preset-pills { display: none; }
         }
+    
+        /* Utility & Component Classes Replacing Inline Styles */
+        .nav-link-exploded { color: var(--cyan-telemetry); font-weight: 700; text-shadow: 0 0 10px var(--cyan-glow); }
+        .hotspot-pin-frontwing { top: 72%; left: 24%; }
+        .hotspot-pin-halo { top: 36%; left: 51%; }
+        .hotspot-pin-brakes { top: 68%; left: 49%; }
+        .hotspot-pin-engine { top: 44%; left: 63%; }
+        .hotspot-pin-rearwing { top: 24%; left: 82%; }
+        .hud-label-live { font-size: 0.8rem; color: var(--f1-red); font-weight: 800; }
+        .hud-label-link { font-size: 0.75rem; color: var(--cyan-telemetry); }
+        .hud-label-lateral { font-size: 0.75rem; color: var(--text-muted); margin-top: 4px; }
+        .deck-title-text { font-size: 0.8rem; color: #fff; font-weight: 800; letter-spacing: 1.5px; }
+        .deck-controls-row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+        .deck-hud-mini-badge { margin-bottom: 0 !important; font-size: 0.65rem !important; padding: 3px 8px !important; }
+        .btn-deck-reset { background: #181824 !important; border-color: #333 !important; }
+        .deck-presets-label { font-family: 'Orbitron', monospace; font-size: 0.65rem; color: #888; margin-right: 4px; }
+        .text-center { text-align: center; }
+        .line-indicator-center { margin: 14px auto 0 auto !important; }
+        .section-header-centered { text-align: center; margin-bottom: 50px; }
+        .analyzer-chart-title { font-size: 0.9rem; color: #fff; font-weight: 700; }
+        .analyzer-chart-sub { font-size: 0.85rem; color: var(--text-muted); }
+        .crew-desc-text { color: #999; max-width: 600px; margin: 0 auto 30px auto; font-size: 1.1rem; }
+        .crew-roster-title { font-size: 0.9rem; color: #fff; }
+        .mentorship-desc-text { color: var(--text-muted); max-width: 680px; margin: 0 auto; font-size: 1.1rem; }
+        .form-title-text { color: var(--f1-red); font-weight: 800; font-size: 0.95rem; }
+        .badge-no-margin { margin-bottom: 0 !important; }
+        .banner-hidden { display: none; }
+        .text-cyan-bold { color: var(--cyan-telemetry); font-weight: 700; }
+        .text-red-bold { color: var(--f1-red); font-weight: 700; }
+        .footer-brand-title { font-size: 1.8rem; font-family: 'Oswald', sans-serif; color: #fff; }
+        .text-f1-red { color: var(--f1-red); }
+        .footer-link-cyan { color: var(--cyan-telemetry); }
+        .creator-credit-text { font-family: 'Orbitron', monospace; font-size: 0.85rem; font-weight: 700; color: var(--cyan-telemetry); letter-spacing: 1px; }
+        .creator-name-glow { color: #fff; text-shadow: 0 0 10px rgba(0, 240, 255, 0.6); }
+
     </style>
 </head>
 <body>
@@ -2618,7 +2665,7 @@
                 </a>
                 <ul class="nav-links">
                     <li><a href="#real-f1-car">Real F1 Machine</a></li>
-                    <li><a href="#exploded-experience" style="color: var(--cyan-telemetry); font-weight: 700; text-shadow: 0 0 10px var(--cyan-glow);">3D Exploded Assembly ⚡</a></li>
+                    <li><a href="#exploded-experience" class="nav-link-exploded">3D Exploded Assembly ⚡</a></li>
                     <li><a href="#about">The Innovation Hub</a></li>
                     <li><a href="#specs">Telemetry & Specs</a></li>
                     <li><a href="#analyzer">Live Analyzer</a></li>
@@ -2640,7 +2687,7 @@
             <div class="real-f1-gradient-overlay"></div>
             
             <!-- Interactive Telemetry Hotspot Pins on the Real F1 Car -->
-            <div class="car-hotspot-pin" style="top: 72%; left: 24%;" onclick="focusOnPart('frontWing')">
+            <div class="car-hotspot-pin hotspot-pin-frontwing" onclick="focusOnPart('frontWing')">
                 <div class="hotspot-pulse"></div>
                 <div class="hotspot-tooltip">
                     <b>AERO FRONT WING & SPOON</b>
@@ -2648,7 +2695,7 @@
                 </div>
             </div>
             
-            <div class="car-hotspot-pin" style="top: 36%; left: 51%;" onclick="focusOnPart('halo')">
+            <div class="car-hotspot-pin hotspot-pin-halo" onclick="focusOnPart('halo')">
                 <div class="hotspot-pulse"></div>
                 <div class="hotspot-tooltip">
                     <b>TITANIUM HALO & COCKPIT</b>
@@ -2656,7 +2703,7 @@
                 </div>
             </div>
 
-            <div class="car-hotspot-pin" style="top: 68%; left: 49%;" onclick="focusOnPart('brakes')">
+            <div class="car-hotspot-pin hotspot-pin-brakes" onclick="focusOnPart('brakes')">
                 <div class="hotspot-pulse red"></div>
                 <div class="hotspot-tooltip">
                     <b>PIRELLI P ZERO SLICKS & BREMBO BRAKES</b>
@@ -2664,7 +2711,7 @@
                 </div>
             </div>
 
-            <div class="car-hotspot-pin" style="top: 44%; left: 63%;" onclick="focusOnPart('engine')">
+            <div class="car-hotspot-pin hotspot-pin-engine" onclick="focusOnPart('engine')">
                 <div class="hotspot-pulse"></div>
                 <div class="hotspot-tooltip">
                     <b>HYBRID V6 TURBOCHARGED ENGINE</b>
@@ -2672,7 +2719,7 @@
                 </div>
             </div>
 
-            <div class="car-hotspot-pin" style="top: 24%; left: 82%;" onclick="focusOnPart('rearWing')">
+            <div class="car-hotspot-pin hotspot-pin-rearwing" onclick="focusOnPart('rearWing')">
                 <div class="hotspot-pulse"></div>
                 <div class="hotspot-tooltip">
                     <b>ACTIVE DRS REAR WING</b>
@@ -2733,8 +2780,8 @@
                 <!-- Right Live Cockpit Telemetry HUD -->
                 <div class="cockpit-hud-panel">
                     <div class="hud-header">
-                        <span class="hud-font" style="font-size: 0.8rem; color: var(--f1-red); font-weight: 800;">LIVE COCKPIT HUD</span>
-                        <span class="hud-font" style="font-size: 0.75rem; color: var(--cyan-telemetry);">PIT WALL LINK // ACTIVE</span>
+                        <span class="hud-font hud-label-live">LIVE COCKPIT HUD</span>
+                        <span class="hud-font hud-label-link">PIT WALL LINK // ACTIVE</span>
                     </div>
                     <div class="hud-gear-speed">
                         <div class="gear-display">
@@ -2743,7 +2790,7 @@
                         </div>
                         <div class="speed-display">
                             <div class="speed-val" id="speed-indicator">138 <span>KM/H</span></div>
-                            <div class="hud-font" style="font-size: 0.75rem; color: var(--text-muted); margin-top: 4px;">LATERAL G: <b id="lat-g-val">1.82 G</b></div>
+                            <div class="hud-font hud-label-lateral">LATERAL G: <b id="lat-g-val">1.82 G</b></div>
                         </div>
                     </div>
                     <!-- RPM Meter -->
@@ -2843,9 +2890,9 @@
                 <div class="exploded-top-bar">
                     <div class="exploded-brand-badge">
                         <div class="beacon-dot"></div>
-                        <span class="hud-font" style="font-size: 0.8rem; color: #fff; font-weight: 800; letter-spacing: 1.5px;">3D CAD EXPLODED VIEW // DISASSEMBLY ENGINE</span>
+                        <span class="hud-font deck-title-text">3D CAD EXPLODED VIEW // DISASSEMBLY ENGINE</span>
                     </div>
-                    <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                    <div class="deck-controls-row">
                         <button class="deck-action-btn active" id="btn-mode-3d" onclick="switchExplodedViewMode('3d')">
                             <span>⚡ 3D WEBGL CAD</span>
                         </button>
@@ -2875,7 +2922,7 @@
                 <div class="exploded-inspector-panel" id="exploded-inspector">
                     <div class="inspector-header">
                         <span class="inspector-title">COMPONENT INSPECTOR</span>
-                        <span class="hud-badge cyan" style="margin-bottom:0; font-size:0.65rem; padding:3px 8px;"><span>3D CAD TELEMETRY</span></span>
+                        <span class="hud-badge cyan deck-hud-mini-badge"><span>3D CAD TELEMETRY</span></span>
                     </div>
                     <div class="inspector-part-name" id="inspect-name">Race Machine Assembly</div>
                     <div class="inspector-desc" id="inspect-desc">Select any exploded sub-assembly or scrub the disassembly slider to inspect internal aerospace components.</div>
@@ -2901,12 +2948,12 @@
                             <button class="deck-action-btn cyan-btn" id="btn-toggle-wireframe" onclick="toggleWireframeMode()">
                                 <span>🌌 BLUEPRINT WIREFRAME</span>
                             </button>
-                            <button class="deck-action-btn" style="background: #181824; border-color: #333;" onclick="resetCameraView()">
+                            <button class="deck-action-btn btn-deck-reset" onclick="resetCameraView()">
                                 <span>↺ RESET VIEW</span>
                             </button>
                         </div>
                         <div class="preset-pills">
-                            <span style="font-family:'Orbitron',monospace; font-size:0.65rem; color:#888; margin-right:4px;">PRESETS:</span>
+                            <span class="deck-presets-label">PRESETS:</span>
                             <button class="preset-pill active" onclick="setCameraPreset('iso')">ISO 3D</button>
                             <button class="preset-pill" onclick="setCameraPreset('top')">TOP AERO</button>
                             <button class="preset-pill" onclick="setCameraPreset('side')">SIDE CHASSIS</button>
@@ -2916,7 +2963,7 @@
                     </div>
                     <div class="deck-slider-row">
                         <span class="deck-slider-label">EXPLOSION LEVEL:</span>
-                        <input type="range" min="0" max="100" value="0" class="deck-slider" id="explosion-slider" oninput="onExplosionSlider(this.value)">
+                        <input type="range" min="0" max="100" value="0" class="deck-slider" id="explosion-slider" title="Explosion Level" aria-label="Explosion Level" oninput="onExplosionSlider(this.value)">
                         <span class="deck-percent-val" id="explosion-slider-val">0%</span>
                     </div>
                 </div>
@@ -2991,11 +3038,11 @@
     <!-- Prototype Technical Specifications -->
     <section id="specs" class="specs-section section-padding">
         <div class="container">
-            <div style="text-align: center;">
+            <div class="text-center">
                 <div class="hud-badge"><span>TELEMETRY & HARDWARE</span></div>
                 <div class="racing-title">
                     <h2>Engineering The Prototype</h2>
-                    <div class="line-indicator" style="margin: 14px auto 0 auto;"></div>
+                    <div class="line-indicator line-indicator-center"></div>
                 </div>
             </div>
             <div class="specs-grid">
@@ -3034,8 +3081,8 @@
             <div class="analyzer-panel">
                 <div class="analyzer-header">
                     <div>
-                        <div class="hud-font" style="font-size: 0.9rem; color: #fff; font-weight: 700;">APEX SPEED VS THROTTLE TELEMETRY TRACE</div>
-                        <div style="font-size: 0.85rem; color: var(--text-muted);">Sampling rate: 100 Hz // CAN-Bus Channel #04</div>
+                        <div class="hud-font analyzer-chart-title">APEX SPEED VS THROTTLE TELEMETRY TRACE</div>
+                        <div class="analyzer-chart-sub">Sampling rate: 100 Hz // CAN-Bus Channel #04</div>
                     </div>
                     <div class="analyzer-modes">
                         <button class="mode-btn active" onclick="setTelemetryMode('qualifying')">QUALIFYING</button>
@@ -3128,19 +3175,19 @@
     <!-- The Crew Section -->
     <section id="team" class="crew-section section-padding">
         <div class="container">
-            <div style="text-align: center;">
+            <div class="text-center">
                 <div class="hud-badge"><span>UNITED BY SPEED</span></div>
                 <div class="racing-title">
                     <h2>The Racing Crew</h2>
-                    <div class="line-indicator" style="margin: 14px auto 0 auto;"></div>
+                    <div class="line-indicator line-indicator-center"></div>
                 </div>
-                <p style="color: #999; max-width: 600px; margin: 0 auto 30px auto; font-size: 1.1rem;">A multidisciplinary team of engineers, fabricators, and strategists working with one heartbeat.</p>
+                <p class="crew-desc-text">A multidisciplinary team of engineers, fabricators, and strategists working with one heartbeat.</p>
             </div>
             
             <div class="crew-box">
                 <img src="assets/media_1787526074539.jpg" alt="SAE ZHCET Collegiate Club - Full Team Photography" class="crew-img">
                 <div class="crew-bar">
-                    <div class="hud-font" style="font-size: 0.9rem; color: #fff;">SAE ZHCET COLLEGIATE CLUB // OFFICIAL ROSTER</div>
+                    <div class="hud-font crew-roster-title">SAE ZHCET COLLEGIATE CLUB // OFFICIAL ROSTER</div>
                     <ul class="dept-list">
                         <li><b>CHASSIS:</b> 8 Engineers</li>
                         <li><b>POWERTRAIN:</b> 6 Engineers</li>
@@ -3157,13 +3204,13 @@
          ========================================================================= -->
     <section id="mentorship" class="mentorship-section section-padding">
         <div class="container">
-            <div style="text-align: center; margin-bottom: 50px;">
+            <div class="section-header-centered">
                 <div class="hud-badge"><span>ROOKIE SEASON 2026 // APPLICATIONS OPEN</span></div>
                 <div class="racing-title">
                     <h2>Engineering Mentorship Program</h2>
-                    <div class="line-indicator" style="margin: 14px auto 0 auto;"></div>
+                    <div class="line-indicator line-indicator-center"></div>
                 </div>
-                <p style="color: var(--text-muted); max-width: 680px; margin: 0 auto; font-size: 1.1rem;">
+                <p class="mentorship-desc-text">
                     Join the next generation of Formula Student engineers at Zakir Husain College of Engineering & Technology, AMU. Learn CFD, vehicle dynamics, CAD modeling, and CAN-Bus electronics under senior trackside mentors.
                 </p>
             </div>
@@ -3172,9 +3219,9 @@
                 <div class="mentorship-card">
                     <div class="mentorship-card-header">
                         <div class="mentorship-card-title">
-                            <span class="hud-font" style="color: var(--f1-red); font-weight: 800; font-size: 0.95rem;">APPLICATION FORM // ROOKIE DIVISION</span>
+                            <span class="hud-font form-title-text">APPLICATION FORM // ROOKIE DIVISION</span>
                         </div>
-                        <div class="hud-badge cyan" style="margin-bottom: 0;"><span>SLOTS: LIMITED // AMU STUDENTS</span></div>
+                        <div class="hud-badge cyan badge-no-margin"><span>SLOTS: LIMITED // AMU STUDENTS</span></div>
                     </div>
 
                     <form id="mentorship-form" onsubmit="submitMentorshipForm(event)">
@@ -3232,10 +3279,10 @@
                     </form>
 
                     <!-- Success Confirmation Banner -->
-                    <div id="form-success-banner" class="form-success-banner" style="display: none;">
+                    <div id="form-success-banner" class="form-success-banner banner-hidden">
                         <div class="success-icon">✅</div>
                         <div class="success-title">APPLICATION TRANSMITTED TO PIT WALL!</div>
-                        <div class="success-desc">Thank you, <span id="success-name" style="color: var(--cyan-telemetry); font-weight: 700;"></span>! Your mentorship application has been registered. Team leads will contact you at <span id="success-email" style="color: var(--f1-red); font-weight: 700;"></span> shortly.</div>
+                        <div class="success-desc">Thank you, <span id="success-name" class="text-cyan-bold"></span>! Your mentorship application has been registered. Team leads will contact you at <span id="success-email" class="text-red-bold"></span> shortly.</div>
                     </div>
                 </div>
             </div>
@@ -3248,14 +3295,14 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <div class="title" style="font-size: 1.8rem; font-family: 'Oswald', sans-serif; color: #fff;">SAE <span style="color: var(--f1-red);">ZHCET</span> RACING</div>
+                    <div class="title footer-brand-title">SAE <span class="text-f1-red">ZHCET</span> RACING</div>
                     <p>Official Formula Student collegiate racing division of Zakir Husain College of Engineering & Technology, Aligarh Muslim University (AMU).</p>
                 </div>
                 <div class="footer-col">
                     <h4>Telemetry Links</h4>
                     <ul class="footer-links">
                         <li><a href="#scroll-experience">121-Frame Scroll Experience</a></li>
-                        <li><a href="#exploded-experience" style="color: var(--cyan-telemetry);">3D CAD Disassembly Engine</a></li>
+                        <li><a href="#exploded-experience" class="footer-link-cyan">3D CAD Disassembly Engine</a></li>
                         <li><a href="#about">The Innovation Hub</a></li>
                         <li><a href="#specs">Telemetry & Specs</a></li>
                         <li><a href="#analyzer">Live CAN-Bus Analyzer</a></li>
@@ -3290,8 +3337,8 @@
             </div>
             <div class="footer-bottom">
                 <div>&copy; 2026 SAE ZHCET Racing. Engineered for performance.</div>
-                <div class="creator-credit" style="font-family: 'Orbitron', monospace; font-size: 0.85rem; font-weight: 700; color: var(--cyan-telemetry); letter-spacing: 1px;">
-                    ⚡ CREATED BY <span style="color: #fff; text-shadow: 0 0 10px rgba(0, 240, 255, 0.6);">MD SAAD HAQUE</span>
+                <div class="creator-credit creator-credit-text">
+                    ⚡ CREATED BY <span class="creator-name-glow">MD SAAD HAQUE</span>
                 </div>
                 <div class="amu-tag">ZHCET • ALIGARH MUSLIM UNIVERSITY (AMU)</div>
             </div>
