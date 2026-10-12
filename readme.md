@@ -106,7 +106,7 @@ An **internet connection is required** for the Google Fonts and Three.js CDN scr
 
 - Telemetry values (speed, RPM, G-force, etc.) are **simulated for display**, not live sensor data.
 - Some gallery cards use placeholders; add real photos for them in `assets/`.
-- The 3D car is procedurally generated from Three.js primitives, so no `.glb` model is needed.
+- The 3D car racing fully created by automobile student is procedurally generated from Three.js primitives, so no `.glb` model is needed.
 - Performance: pixel ratio is capped at 2 and the aero-arrow count is reduced on mobile.
 
 ---
