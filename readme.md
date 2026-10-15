@@ -39,7 +39,8 @@ The site is a racing-themed, F1-inspired showcase with a 3D interactive CAD expl
 | Fonts | Google Fonts: Orbitron, Rajdhani, Oswald, Montserrat |
 
 No build step, no framework, no npm install. It is one self-contained HTML file plus an `assets/` folder.
-after we added frame work
+after we added frame work nmp but now wait and watch 
+
 
 ---
 
